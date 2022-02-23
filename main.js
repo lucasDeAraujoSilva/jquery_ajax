@@ -9,7 +9,7 @@ function consultaCep() {
     type: "GET",
     success: function (response) {
       console.log(response);
-      $("#titulo-cep").html(" CEP " + cep);
+      $("#titulo-cep").html(" Informações do CEP " + cep);
       document.getElementById("logradouro").innerHTML = response.logradouro;
       document.getElementById("bairro").innerHTML = response.bairro;
       $("#complemento").html(response.complemento);
